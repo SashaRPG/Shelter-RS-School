@@ -1,0 +1,140 @@
+body{
+    padding: 0;
+    margin: 0;
+    
+}
+
+h1{
+    color: #F1CDB3;
+    font-family: Georgia 400;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    align-items: center;
+}
+
+.underline{
+    color: #fff;
+    font-family: Arial 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    align-items: center;
+}
+
+.wrapper{
+    display: grid;
+    width: 100%;
+    height: 980px;
+}
+
+.start-background{
+    display: grid;
+    height: 100vh;
+    padding: 0 20px;
+    grid-template: 100px 1fr / 1fr 1fr;
+    grid-template-areas: 'header header' 'content puppy';
+    background-image: url(../assets/img/start-screen-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.header{
+    display: grid;
+    height: 60px;
+    grid-template-columns: 1fr 2fr;
+    grid-area: header;
+}
+
+.logo{
+    padding-top: 60px;
+    padding-left: 40px;
+}
+
+.not-only{
+    padding-left: 40px;
+    padding-top: 40px;
+    text-align: left;
+}
+.not-only p{
+    text-align: justify;
+    color: #CDCDCD;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    padding-bottom: 40px;
+}
+
+#selected-link{
+    border-bottom: 1px solid #F1CDB3;
+    color: #FAFAFA;
+}
+
+#make-a-friend{
+    background-color:#F1CDB3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    height: 52px;
+    width: 207px;
+    font-size: 17px;
+    
+}
+
+#make-a-friend>a{
+    color: #292929;
+    text-decoration: none;
+    font-family: Georgia;
+}
+
+#make-a-friend:hover{
+    box-shadow: none;
+}
+
+.nav{
+    padding-top: 60px;
+    padding-right: 40px;
+    width: 440px;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #545454;
+}
+
+
+.start-content{
+    grid-area: content;
+}
+
+
+.start-screen-puppy{
+    grid-area: puppy;
+    width: 698px;
+    height: 728px;
+}
+
+.start-screen-puppy img{
+    max-width: 100%;
+    max-height: auto;
+}
+
+
+.unselected-link{
+    text-decoration: none;
+}
+
+.start-content>h2{
+    color: #fff;
+    font-family: Georgia 400;
+    font-size: 44px;
+    line-height: 130%;
+    align-items: center;
+}
