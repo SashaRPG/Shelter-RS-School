@@ -148,28 +148,39 @@ main .our-pets {
     row-gap: 30px;
     color: #545454; 
 }
-        main .pet-card {
-          width: 270px;
-          border-radius: 9px;
-          height: 435px;
-          background-color: #FAFAFA;
-          font-family: Georgia, serif;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          transition: .2s; }
-          main .pet-card:hover {
-            background-color: #FFFFFF; }
-            main .pet-card:hover button {
-              border-color: #F1CDB3;
-              background-color: #F1CDB3; }
-          main .pet-card img {
-            margin-bottom: 30px; }
-          main .pet-card .pet-name {
-            margin-bottom: 30px;
-            font-size: 20px;
-            letter-spacing: .06em;
-            line-height: 1.13; }
+
+main .pet-card {
+    width: 270px;
+    border-radius: 9px;
+    height: 435px;
+    background-color: #FAFAFA;
+    font-family: Georgia, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .2s; 
+}
+          
+main .pet-card:hover {
+    background-color: #FFFFFF; 
+    cursor: pointer;
+}
+            
+main .pet-card:hover button {
+    border-color: #F1CDB3;
+    background-color: #F1CDB3; 
+}
+          
+main .pet-card img {
+    margin-bottom: 30px; 
+}
+          
+main .pet-card .pet-name {
+    margin-bottom: 30px;
+    font-size: 20px;
+    letter-spacing: .06em;
+    line-height: 1.13; 
+}
           
 main .pet-card .learn-more-btn {
     color: #292929;
