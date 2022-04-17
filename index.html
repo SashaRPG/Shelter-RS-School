@@ -18,12 +18,14 @@
         <title>Cozy House Shelter</title>
     </head>
     <body>
+        <div class="overlay"></div>
         <section class="start-screen">
             <header class="wrapper header">
                 <div class="shelter-logo">
                     <h1><a href='#'>Cozy House</a></h1>
                     <span>Shelter for pets in Boston</span>
                 </div>
+                <div class="burger-menu"></div>
                 <nav class="navigation">
                     <ul class="nav-list">
                         <li><a class="active" href="">About the shelter</a></li>
@@ -39,7 +41,7 @@
                     <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
                     <a href="#our-friends">Make a friend</a>
                 </div>            
-                <img src="./assets/img/start-screen-puppy.png" alt="dog">       
+                <img class ="start-logo-puppy" src="./assets/img/start-screen-puppy.png" alt="dog">       
             </div>
         </section>
         <section class="about-shelter">
@@ -65,12 +67,12 @@
                             <span class="pet-name">Katrine</span>
                             <button type="button">Learn more</button>
                         </div>
-                        <div class="our-friends-individual-card">
+                        <div class="our-friends-individual-card phone-hidden">
                             <img src="./assets/img/pets-jennifer.png" alt="Jennifer the dog">
                             <span class="pet-name">Jennifer</span>
                             <button type="button">Learn more</button>
                         </div>
-                        <div class="our-friends-individual-card">
+                        <div class="our-friends-individual-card tablet-hidden phone-hidden">
                             <img src="./assets/img/pets-woody.png" alt="Woody the dog">
                             <span class="pet-name">Woody</span>
                             <button type="button">Learn more</button>
@@ -132,6 +134,6 @@
                     </div>
                 </div>
             </div>
-        </footer> 
+        </footer>
     </body>
 </html>

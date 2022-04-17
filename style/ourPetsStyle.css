@@ -336,7 +336,7 @@ main .our-friends-pagination .page-number {
     text-decoration:underline
 }
   
-.footer-address .ondon a {
+.footer-address .london a {
     padding-top: 5px;
     padding-bottom:5px
 }
@@ -345,3 +345,183 @@ main .our-friends-pagination .page-number {
     margin-left: 160px;
     max-height: 310px
 }
+
+@media screen and (max-width: 1279px) {
+    .wrapper {
+        width: 90%;
+    }
+    
+    .header {
+        justify-content: space-around;
+        padding: 0px 30px;
+        
+    }
+
+    .header .wrapper {
+        padding: 29px 0px;
+    }
+    
+    .our-pets >.pet-card.tablet-hidden{
+        display: none;
+    }
+
+    .footer-image {
+        order: 1;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        padding: 0 10px;
+    }
+
+    .header .wrapper {
+        align-items: center;
+    }
+
+    .header .shelter-logo span{
+        margin-top: 10px;
+    }
+
+    .header .wrapper .navigation {
+        width: 63%;
+    }
+    
+    .header .wrapper .nav-list {
+        column-gap: 0;
+        justify-content: flex-end;
+        white-space: nowrap;
+    }
+
+    .shelter-logo {
+        margin-left: -10px;
+    }   
+    
+    .navigation {
+        margin-right: -7px;
+       
+    }
+
+    main .our-pets {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        max-width:768px
+    }
+
+    .footer-contacts, .footer-address {   
+        max-width: 49%;
+    }
+        
+    .footer-address {
+        margin-left: 0;
+        padding-left: 5px;
+        max-width: 40%;
+        margin-right: -12px;
+    }
+    
+    .footer-info {
+        margin: 0 auto;
+        max-width: 92%;
+        flex-wrap: wrap;
+    }
+        
+    .footer {
+        padding-top: 14px;
+    }
+      
+    .footer-image {
+        margin-top: 64px;
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header .nav-list li{
+        margin-left: 0
+    }
+    .shelter-logo {
+        margin-left: -10px;
+    }
+
+    .shelter-logo > span{
+        margin-top: 10px;
+    }
+
+    .navigation {
+        margin-right: -7px;
+    }
+
+
+    .our-pets >.pet-card.mobile-hidden{
+        display: none;
+    }
+
+    .footer {
+        padding-top: 0;
+    }
+    
+    .footer-info{
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 0;
+        flex-wrap: nowrap;
+        padding: 30px 10px 0 10px;
+    }
+    
+    .footer-contacts{
+        max-width: 100%;
+        padding-top: 2px;
+        margin: 0;
+        align-items: center;
+        
+    }
+    
+    .footer-contacts h3 {
+        margin-bottom: 43px;
+        text-align: center;
+        font-size: 25px;
+        line-height: 1.2;
+    }
+    
+    .footer-address{
+        max-width: 100%;
+        padding-left: 0;
+        padding-top: 43px;
+        margin: 0;
+        align-items: center;
+    }
+    
+    .footer-address h3 {
+        margin: 0px 15px;
+        text-align: center;
+        font-size: 25px;
+        line-height: 1.2;
+    }
+    
+    .footer-address .boston, .footer-address .london {
+        margin-top: 35px;
+    }
+    
+    .footer-address .london {
+        align-self: flex-start;
+    }
+    
+    .footer-address .boston a {
+        padding: 5px 0 5px 39px;
+    }
+    
+    .footer-image {
+        margin: 40px auto 0 auto;
+        width: 86%;
+    }
+    
+    .footer-image img {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 300px;
+    }
+}
+
