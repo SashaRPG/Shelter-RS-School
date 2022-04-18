@@ -714,17 +714,23 @@ h1, h2, h3, h4, h5, h6 {
     
   .about-shelter-content > img {
     max-width: 61%;
-    margin: -13px auto 0 auto;
+    margin: 13px auto 0 auto;
   }
     
   .our-friends .wrapper h3 {
-    width: 60%;
+    width: 90%;
   }
 
   /*.help-the-shelter > .wrapper{
     width: 93%;
   }*/
     
+  .help-the-shelter .wrapper .help-icons-list {
+    justify-content: space-between;
+    column-gap: normal;
+    row-gap: 55px;
+}
+
   .help-the-shelter .wrapper h3 {
     width: 51%;
   }
@@ -798,8 +804,6 @@ h1, h2, h3, h4, h5, h6 {
   .start-screen .header {
     padding-left: 20px;
     height: auto;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -810,7 +814,7 @@ h1, h2, h3, h4, h5, h6 {
     background: url("../assets/img/Burger.png") no-repeat center center;
     margin-right: 53px;
     position: relative;
-    z-index: 3;
+    z-index: 2;
     transition: .5s;
     cursor: pointer;
   }
@@ -853,21 +857,8 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1;
   }
 
-  .start-screen .header .navigation {
-    position: fixed;
-    top: 0;
-    right: -110%;
-    width: 320px;
-    height: 100vh;
-    background-color: #292929;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: .5s;
-    z-index: 1;
-}
 
-  /*.start-screen .header .navigation-active {
+  .start-screen .header .navigation-active {
       right: 0;
   }
 
@@ -875,7 +866,7 @@ h1, h2, h3, h4, h5, h6 {
       position: fixed;
       right: 0px;
       transform: rotate(90deg);
-  }*/
+  }
 
   .start-screen-content-text {
     max-width: 92%;
@@ -903,23 +894,24 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .about-shelter {
-    max-width: 100%;
+    width: 89%;
   }
 
   .about-shelter-text>h3 {
     padding: 0;
-    margin-top: -27px;
+    margin-top: -30px;
     font-size: 25px;
     line-height: 130%;
     letter-spacing: 0.06em;
     text-align:center;
+    width: 100%;
   }
 
+
   .about-shelter-text {
-    max-width: 100%;
+    max-width: 95%;
     font-size: 15px;
     text-align: justify;
-    
   }
 
   .about-shelter-text p {
@@ -929,13 +921,20 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .about-shelter-content>img{
-    max-width: 100%;
-    margin: 0;
+    width: 100%;
+    margin-top: -40px;
+    margin-bottom: -60px;
+    max-width: 259px;
+  }
 
+  .our-friends .wrapper .our-friends-individual-card img {
+    margin-bottom: 30px;
+    margin-top: -20px;
   }
 
   .our-friends .wrapper h3{
     font-size: 25px;
+    margin-top: -40px;
   }
 
   .our-friends-slider{
@@ -973,8 +972,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: -19px;
   }
 
-  .our-friends .wrapper .our-friends-get-the-pet{
+  .our-friends .wrapper .our-friends-get-the-pet {
     margin-top: 43px;
+    margin-bottom: 42px;
   }
 
   .help-the-shelter {
@@ -993,6 +993,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     padding-top: 42px;
     justify-content: space-between;
+    column-gap: 30px;
+    flex-wrap: wrap;
   }
 
   .help-the-shelter .wrapper .help-icons-element {
@@ -1001,53 +1003,58 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 2%;
     font-size: 15px;
     line-height: 16.5px;
-  }
-
-  .help-the-shelter .wrapper .help-icons-list {
-    row-gap: 29px;
-    justify-content: space-between;
+    
   }
 
   .help-the-shelter .wrapper .help-icons .food {
     background-size: 50px;
+    
   }
 
   .help-the-shelter .wrapper .help-icons .transportation {
     background-size: 50px;
+    
   }
 
   .help-the-shelter .wrapper .help-icons .toys {
     background-size: 50px; 
-    width: 44%;
+    
   }
 
   .help-the-shelter .wrapper .help-icons .bowls {
     background-size: 50px;
+    
   }
 
   .help-the-shelter .wrapper .help-icons .shampoos {
     background-size: 50px;
+    
   }
 
   .help-the-shelter .wrapper .help-icons .vitamins {
     background-size: 50px;
+    
   }
 
   .help-the-shelter .wrapper .help-icons .medicine {
     background-size: 50px;
+    
   }
 
   .help-the-shelter .wrapper .help-icons .collar {
     background-size: 50px;
+    
   }
 
   .help-the-shelter .wrapper .help-icons .sleep {
     background-size: 50px;
-    margin-left: -55%;
+    margin-right: 170px;
+    
   }
 
   .help-icons-list>li{
     width: 40%;
+    
   }
 
   .in-addition-content {
