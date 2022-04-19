@@ -981,12 +981,31 @@ h1, h2, h3, h4, h5, h6 {
     padding: 42px 10px;
   }
 
+  .help-icons-element:nth-child(9){
+    margin-right: 0;
+  }
+
   .help-the-shelter .wrapper h3 {
     width: 80%;
     font-size: 25px;
     line-height: 32.5px;
     margin: 0 auto;
   }
+
+
+  .help-icons {
+    max-width: 630px;
+    max-height: 555px;
+    width: calc(290px + 340 * ((100vw - 320px) / (768 - 320)));
+    height: calc(555px - 106 * ((100vw - 320px) / (768 - 320)));
+  }
+
+  .help-icons-element {
+    width: calc(130px + 40 * ((100vw - 320px) / (768 - 320)));
+    height: calc(87px + 26 * ((100vw - 320px) / (768 - 320)));
+    margin: 0px;
+  }
+
 
   .help-the-shelter .wrapper .help-icons-list {
     row-gap: 29px;
