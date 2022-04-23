@@ -16,23 +16,31 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0; 
 }
 
+body.active {
+  overflow-y: hidden;
+}
+
+body.active .shelter-logo {
+  opacity: 0;
+}
+
 @font-face {
   font-family: 'Arial';
-  src: url("../../assets/fonts/arial/arial-regular.ttf") format("truetype");
+  /*src: url("../../assets/fonts/arial/arial-regular.ttf") format("truetype");*/
   font-weight: 400;
   font-style: normal; 
 }
 
 @font-face {
   font-family: 'Arial';
-  src: url("../../assets/fonts/arial/arial-italic.ttf") format("truetype");
+  /*src: url("../../assets/fonts/arial/arial-italic.ttf") format("truetype");*/
   font-weight: 400;
   font-style: italic; 
 }
 
 @font-face {
   font-family: 'Georgia';
-  src: url("../../assets/fonts/georgia/georgia-regular.ttf") format("truetype");
+  /*src: url("../../assets/fonts/georgia/georgia-regular.ttf") format("truetype");*/
   font-weight: 400;
   font-style: normal; 
 }
@@ -51,6 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .overlay.active {
   position: fixed;
+  z-index: 1;
   width: 100vw;
   height: 100vh;
   background-color: rgba(41, 41, 41, 0.6);
@@ -87,6 +96,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 13px;
   letter-spacing: 0.1em;
   font-weight: 400; 
+}
+
+.hidden-logo {
+  opacity: 0;
 }
 
 .start-screen .header .burger-menu {
@@ -807,6 +820,39 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
   }
 
+  .start-screen .header .navigation .hidden-logo {
+    transition: cubic-bezier(0.42, 0, 0.58, 1.02) 0.5s;
+    opacity: 1;
+    display: block;
+    position: absolute;
+    top: 30px;
+    left:10px
+  }
+
+  .start-screen .header .navigation .hidden-logo .cozy-house {
+    font-family: Georgia, serif;
+    color: #F1CDB3;
+    font-size: 32px;
+    letter-spacing: 0.06em;
+    font-weight:400
+  }
+
+  .start-screen .header .navigation .hidden-logo .cozy-house a {
+    color: inherit;
+  }
+
+  .start-screen .header .navigation .hidden-logo .underline {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.116em;
+    font-weight: 400;
+    display: inline-block;
+    padding-left: 4px;
+    padding-top: 9px;
+    letter-spacing: .1em;
+  } 
+
+
   .start-screen .header .burger-menu {
     display: block;
     width: 30px;
@@ -821,18 +867,21 @@ h1, h2, h3, h4, h5, h6 {
 
   .start-screen .header .shelter-logo h1 a {
     position: relative;
+    order: 1;
     z-index: 2;
   }
 
   .start-screen .header .shelter-logo span {
     position: relative;
+    order: 2;
     z-index: 2;
   }
 
   .start-screen .header .nav-list {
     flex-direction: column;
     align-items: center;
-    row-gap: 43px;
+    row-gap: 40px;
+    margin-top: 150px;
   }
 
   .start-screen .header .nav-list li {
@@ -859,13 +908,13 @@ h1, h2, h3, h4, h5, h6 {
 
 
   .start-screen .header .navigation-active {
-      right: 0;
+    right: 0;
   }
 
   .start-screen .header .burger-menu-active {
-      position: fixed;
-      right: 0px;
-      transform: rotate(90deg);
+    position: fixed;
+    right: 0px;
+    transform: rotate(90deg);
   }
 
   .start-screen-content-text {
