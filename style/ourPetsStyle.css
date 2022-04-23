@@ -50,8 +50,7 @@ body.active .shelter-logo {
     transition: .2s;
   }
   
-.overlay.active {
-    z-index: 10;
+.overlay.active { 
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -466,13 +465,13 @@ main .our-friends-pagination .page-number {
 }
 
 @media screen and (max-width: 767px) {
-    .wrapper {
-        width: 100%;
-    }
-
     html {
         max-width: 100vw;
         overflow-x: hidden;
+    }
+    
+    .wrapper{
+        width: 100%;
     }
     
     .header {
@@ -481,6 +480,10 @@ main .our-friends-pagination .page-number {
         align-items: center;
     }
 
+    .header .wrapper .navigation {
+        width: 320px;
+    }
+    
     .header .navigation .hidden-logo {
         transition: cubic-bezier(0.42, 0, 0.58, 1.02) 0.5s;
         opacity: 1;
@@ -489,15 +492,15 @@ main .our-friends-pagination .page-number {
         top: 30px;
         left: 10px;
     }
-
+    
     .header .navigation .hidden-logo .cozy-house {
         font-family: Georgia, serif;
-        color: #F1CDB3;
+        color: #000000;
         font-size: 32px;
         letter-spacing: 0.06em;
-        font-weight: 400;
+        font-weight: 400ж
     }
-
+    
     .header .navigation .hidden-logo .cozy-house a {
         color: inherit;
     }
@@ -506,12 +509,14 @@ main .our-friends-pagination .page-number {
         font-family: Arial, sans-serif;
         font-size: 13px;
         letter-spacing: 0.116em;
+        color: #000000;
         font-weight: 400;
         display: inline-block;
         padding-left: 4px;
         padding-top: 9px;
         letter-spacing: .1em;
     } 
+    
     
     .header .burger-menu {
         display: block;
@@ -520,7 +525,7 @@ main .our-friends-pagination .page-number {
         background: url("../assets/img/Burger2.png") no-repeat center center;
         margin-right: 53px;
         position: relative;
-        z-index: 6;
+        z-index: 2;
         transition: .5s;
         cursor: pointer;
     }
@@ -533,8 +538,8 @@ main .our-friends-pagination .page-number {
     
     .header .shelter-logo span {
         position: relative;
-        z-index: 2;
         order: 2;
+        z-index: 2;
     }
     
     .header .nav-list {
@@ -542,9 +547,8 @@ main .our-friends-pagination .page-number {
         align-items: center;
         row-gap: 40px;
         margin-top: 150px;
-        z-index: 10;
     }
-
+    
     .header .nav-list li {
         margin: 0;
     }
@@ -559,12 +563,12 @@ main .our-friends-pagination .page-number {
         right: -110%;
         width: 320px;
         height: 100vh;
-        background-color: #292929;
+        background-color: #dbdbdb;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: .5s;
-        z-index: 5;
+        z-index: 1;
     }
     
     
@@ -576,27 +580,6 @@ main .our-friends-pagination .page-number {
         position: fixed;
         right: 0px;
         transform: rotate(90deg);
-    }
-
-    .shelter-logo {
-        margin-left: -10px;
-    }
-
-    .shelter-logo > span{
-        margin-top: 10px;
-    }
-
-    .header .wrapper .navigation {
-        display: none;
-        z-index: 1;
-    }
-
-    .navigation {
-        margin-right: -7px;
-    }
-
-    .header .navigation-active {
-        right: 0;
     }
 
     main .our-friends {
