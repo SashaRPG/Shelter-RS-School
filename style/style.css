@@ -45,6 +45,55 @@ body.active .shelter-logo {
   font-style: normal; 
 }
 
+.move-right {
+  animation: move-right 1s ease-in-out;
+}
+
+@keyframes move-right {
+  from {
+    left: -1080px;
+  }
+  to {
+    left: -2160px;
+  }
+}
+
+.move-left {
+  animation: move-left 1s ease-in-out;
+}
+
+@keyframes move-left {
+  from {
+    left: -1080px;
+  }
+  to {
+    left: 0;
+  }
+}
+
+
+
+
+.our-friends .wrapper .our-friends-slider .our-friends-cards .innerSlider {
+  position: absolute;
+  left: -1080px;
+  height: 43.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 207rem;
+  gap: 90px;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
+.our-friends .wrapper .our-friends-slider .our-friends-cards {
+  position: relative;
+  width: 99rem;
+  height: 43.5rem;
+  overflow: hidden;
+}
+
 
 .wrapper {
   color: white;
@@ -254,6 +303,37 @@ body.active .shelter-logo {
   justify-content: space-between;
   align-items: center; 
 }
+
+/*.our-friends .wrapper .our-friends-cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 82.5%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  height:435px
+}
+
+@media (max-width: 1279px) {
+  .our-friends .wrapper .our-friends-cards-wrapper {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      width:82.5%
+  }
+}
+
+@media (max-width: 1279px) and(max-width: 767px) {
+  .our-friends .wrapper .our-friends-cards-wrapper {
+      width:80%
+  }
+}*/
       
 .our-friends .wrapper .our-friends-cards {
   display: flex;
@@ -628,6 +708,33 @@ body.active .shelter-logo {
 
 
 @media screen and (max-width: 1279px) {
+
+  .move-right-768 {
+    animation: move-right-768 0.7s ease-in-out;
+  }
+
+  @keyframes move-right-768 {
+    from {
+      left: -930px;
+    }
+    to {
+      left: -1860px;
+    }
+  }
+
+  .move-left-768 {
+    animation: move-left-768 0.7s ease-in-out;
+  }
+  
+  @keyframes move-left-768 {
+    from {
+      left: -930px;
+    }
+    to {
+      left: 0;
+    }
+  }
+
   .wrapper {
     width: 90%;
   }
@@ -800,6 +907,32 @@ body.active .shelter-logo {
 }
 
 @media screen and (max-width: 767px) {
+  .move-right-320 {
+    animation: move-right-320 0.5s ease-in-out;
+  }
+
+  @keyframes move-right-320 {
+    from {
+      left: -810px;
+    }
+    to {
+      left: -1620px;
+    }
+  }
+
+  .move-left-320 {
+    animation: move-left-320 0.5s ease-in-out;
+  }
+
+  @keyframes move-left-320 {
+    from {
+      left: -810px;
+    }
+    to {
+      left: 0;
+    }
+  }
+
   html {
     max-width: 100vw;
     overflow-x: hidden;
@@ -995,7 +1128,6 @@ body.active .shelter-logo {
   }
   .our-friends .wrapper .our-friends-cards{
     width: 100%;
-
   }
 
   .our-friends .wrapper .our-friends-individual-card.phone-hidden {
